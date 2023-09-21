@@ -57,7 +57,7 @@ with open('car_fleet_csv')as csvFile:
     csvReacer = csv.reader(csvFile,delimiter=',')
 
     lineCount = 0
-    for row in csvReader:
+    for row in csvReacer:
         if lineCount == 0:
             print(f'Column names are : {",".join(row)}')
             lineCount += 1
